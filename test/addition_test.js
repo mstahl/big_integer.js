@@ -3,6 +3,7 @@ var should = require('should')
 
 describe('BigInt', function () {
   describe('#add', function () {
+
     it('should add two BigInts of the same size', function () {
       var a = new BigInt([1, 1, 1, 1])
       var b = new BigInt([2, 2, 2, 2])
@@ -32,5 +33,17 @@ describe('BigInt', function () {
       var b = new BigInt([2])
       a.add(b).representation.should.eql([1, 1])
     })
+
+    it('should subtract when adding a negative number', function () {
+      var a = new BigInt(394)
+      var b = new BigInt(-127)
+      a.add(b).representation.should.eql([7, 6, 2])
+    })
+
+    it('should be able to add an integer to a BigInt', function () {
+      var a = new BigInt(345)
+      a.add(678).representation.should.eql([3, 2, 0, 1])
+    })
+
   })
 })
