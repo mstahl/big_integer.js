@@ -15,6 +15,16 @@ integer, or with a list of integers.
 If you are initializing with a list, the least significant radix goes first,
 and no item in the list should exceed `BigInt.base`.
 
+    a.add(b)      #=> Add two numbers
+    a.subtract(b) #=> Subtract b from a
+
+## To do
+
+  * Multiplication
+  * Division
+  * Modular arithmetic
+  * Exponentiation/up-arrow
+
 ## License
 
 Released under the MIT public license.
