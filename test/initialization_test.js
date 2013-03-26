@@ -20,7 +20,7 @@ describe('BigInt', function () {
       i.representation.should.eql([1,2,3,4])
     })
 
-    it.skip('should initialize with a string', function () {
+    it('should initialize with a string', function () {
       var i = new BigInt("12345")
       i.representation.should.eql([5, 4, 3, 2, 1])
     })
