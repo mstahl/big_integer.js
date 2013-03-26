@@ -5,8 +5,8 @@ var should = require('should')
 describe('BigInt', function () {
   describe('#compare', function () {
     it('is not easily confused by numbers of differing lengths', function () {
-      var a = new BigInt(1111)
-      var b = new BigInt(222)
+      var a = new BigInt(1234)
+      var b = new BigInt(234)
       a.compare(b).should.eql(1)
       b.compare(a).should.eql(-1)
     })
