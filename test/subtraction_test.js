@@ -10,7 +10,7 @@ describe('BigInt', function () {
       a.subtract(b).representation.should.eql([1, 1, 1, 1, 1])
     })
 
-    it('can subtract two bigints with borrowing digits', function () {
+    it.only('can subtract two bigints with borrowing digits', function () {
       var a = new BigInt([1, 1, 1, 1, 1])
       var b = new BigInt([9, 8, 7])
       a.subtract(b).representation.should.eql([2, 2, 3, 0, 1])
