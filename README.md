@@ -17,10 +17,13 @@ and no item in the list should exceed `BigInt.base`.
 
     a.add(b)      #=> Add two numbers
     a.subtract(b) #=> Subtract b from a
+    a.multiply(b) #=> Multiply a by b
+    a.compare(b)  #=> Compare a with b (returns -1, 0, or 1)
+    a.shift(n)    #=> Shift a by `n` digits (equivalent of `<<`)
 
 ## To do
 
-  * Multiplication
+  * Better test coverage for negative numbers
   * Division
   * Modular arithmetic
   * Exponentiation/up-arrow
